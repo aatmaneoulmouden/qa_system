@@ -11,7 +11,7 @@ def test_retrieval_returns_results():
     rag = LocalRAG()
     rag.build()
     results = rag.search("AI software developer productivity", top_k=3)
-    assert len(results) > 100
+    assert len(results) > 0
 
 
 def test_top_k_is_respected():
