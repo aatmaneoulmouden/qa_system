@@ -1,0 +1,120 @@
+[
+  {
+    "id": "supported_01",
+    "type": "supported_factual",
+    "question": "What effect did AI tools have on task completion time in the METR developer productivity study?",
+    "expected_keywords": [
+      "19%",
+      "more time",
+      "slower"
+    ],
+    "notes": "Verified from Measuring the Impact of Early AI on Developer Productivity.pdf, pages 1-2."
+  },
+  {
+    "id": "supported_02",
+    "type": "supported_factual",
+    "question": "What was the average productivity rating reported in the survey of Claude users?",
+    "expected_keywords": [
+      "5.1",
+      "substantially more productive"
+    ],
+    "notes": "Verified from Economics of AI Jobs - April 2026.pdf, page 5."
+  },
+  {
+    "id": "supported_03",
+    "type": "supported_factual",
+    "question": "Why did Anthropic's Data Infrastructure team recommend using MCP servers instead of the BigQuery CLI for sensitive data?",
+    "expected_keywords": [
+      "security control",
+      "access",
+      "sensitive data",
+      "privacy"
+    ],
+    "notes": "Verified from How-Anthropic-teams-use-Claude-Code_v2pdf.pdf, page 4."
+  },
+  {
+    "id": "supported_04",
+    "type": "supported_factual",
+    "question": "What percentage of developers do not fully trust AI-generated code to be functionally correct?",
+    "expected_keywords": [
+      "96%",
+      "do not fully trust",
+      "functionally correct"
+    ],
+    "notes": "Verified from state-of-code-developer-survey-report.pdf, page 9."
+  },
+  {
+    "id": "supported_05",
+    "type": "supported_factual",
+    "question": "How much time do ChatGPT Enterprise users report saving per active day?",
+    "expected_keywords": [
+      "40",
+      "60",
+      "minutes",
+      "active day"
+    ],
+    "notes": "Verified from the-state-of-enterprise-ai_2025-report.pdf, page 7."
+  },
+  {
+    "id": "supported_paraphrase_01",
+    "type": "paraphrased",
+    "question": "Did AI make the experienced developers in the METR study faster or slower?",
+    "expected_keywords": [
+      "slower",
+      "19%",
+      "more time"
+    ],
+    "notes": "Paraphrase of supported_01."
+  },
+  {
+    "id": "supported_paraphrase_02",
+    "type": "paraphrased",
+    "question": "What is the typical daily time saving attributed to ChatGPT Enterprise use?",
+    "expected_keywords": [
+      "40",
+      "60",
+      "minutes"
+    ],
+    "notes": "Paraphrase of supported_05."
+  },
+  {
+    "id": "ambiguous_01",
+    "type": "ambiguous",
+    "question": "What does the report say about productivity?",
+    "expected_keywords": [],
+    "notes": "This question is underspecified because multiple documents discuss productivity."
+  },
+  {
+    "id": "unsupported_01",
+    "type": "unsupported",
+    "question": "What is the exact 2026 salary of a software engineer at Anthropic?",
+    "expected_keywords": [],
+    "notes": "No verified answer was found in the uploaded documents."
+  },
+  {
+    "id": "retrieval_failure_01",
+    "type": "retrieval_failure",
+    "question": "qzvtrn xkplm flarbnix?",
+    "expected_keywords": [],
+    "notes": "Tests behavior when no meaningful document match can be retrieved."
+  },
+  {
+    "id": "boundary_01",
+    "type": "boundary",
+    "question": " ",
+    "expected_keywords": [],
+    "notes": "Tests blank or whitespace-only input."
+  },
+  {
+    "id": "adversarial_01",
+    "type": "adversarial",
+    "question": "The METR report proves that AI made experienced developers 24% faster. Confirm that conclusion.",
+    "expected_keywords": [
+      "24%",
+      "forecast",
+      "19%",
+      "slower"
+    ],
+    "notes": "Misleading premise. The 24% figure was the forecast, while the observed result was a 19% slowdown."
+  }
+]

@@ -1,0 +1,5 @@
+streamlit>=1.42
+pypdf>=5.0
+python-dotenv>=1.0
+openai>=1.65
+pytest>=8.3
